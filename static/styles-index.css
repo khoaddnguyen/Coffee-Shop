@@ -1,0 +1,26 @@
+* {
+     font-family: "Space Mono", monospace;
+     font-size:12px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-between
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+#header-content {
+  background: black;
+  color: white
+}

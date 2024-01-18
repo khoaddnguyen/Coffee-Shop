@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="site-header">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Coffee</title>
+    <link rel="stylesheet" href="static/styles-index.css">
+
+    <div id="header-content">
+        <div class="container justify-content">
+
+            <div>MINOR FIGURES</div>
+            <div class="login-button">LOGIN</div>
+
+        </div>
+
+        <div class="container flex-col">
+            <div>SHOP</div>
+            <div>PLAY</div>
+            <div>FM</div>
+            <div>SOURCE FILES</div>
+
+
+        </div>
+    </div>
+
+
+</head>
+
+<body>
+
+    <div id="imageContainer">
+        <img id="displayedImage" src="static/home1.webp">
+    </div>
+
+    <!-- Add your JavaScript links or scripts here -->
+    <script>
+        var currentIndex = 0;
+        var imageArray = [
+            "home1.webp",
+            "home2.webp"
+        ];
+
+        function cycleImages() {
+            var displayedImage = document.getElementById("displayedImage");
+            displayedImage.src = imageArray[currentIndex];
+            currentIndex = (currentIndex + 1) % imageArray.length;
+        }
+
+        var intervalId = setInterval(cycleImages, 2000);
+
+        // To stop the automatic cycling, you can clear the interval
+        clearInterval(intervalId);
+    </script>
+    <!-- Example: <script src="script.js"></script> -->
+
+
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div> WHOLESALE </div>
+        <div> INSTAGRAM </div>
+        <div> MAILING LIST </div>
+        <div> STORE LOCATOR </div>
+        <div> SMALL PRINT </div>
+        <div> SEARCH </div>
+        <div> CONTACT </div>
+        <div> CAREERS </div>
+
+        <div>© MINOR FIGURES 2024 • CREDITS</div>
+    </div>
+
+</footer>
+</html>
