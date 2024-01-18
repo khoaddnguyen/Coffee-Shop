@@ -9,7 +9,7 @@ def home():
     current_year = datetime.datetime.now().year
     return render_template("index.html", year=current_year)
 
-@app.route("/login")
+@app.route("/account")
 def get_login():
     return render_template("login.html")
 

@@ -10,14 +10,14 @@
         <div class="container justify-content">
 
             <div>MINOR FIGURES</div>
-            <div class="login-button">LOGIN</div>
+            <div class="login-button"><a href="{{ url_for('get_login') }}">LOGIN</a></div>
 
         </div>
 
         <div class="container flex-col">
-            <div>SHOP</div>
-            <div>PLAY</div>
-            <div>FM</div>
+            <div><a href="{{ url_for('get_shop') }}">SHOP</a></div>
+            <div><a href="{{ url_for('get_play') }}">PLAY</a></div>
+            <div><a href="{{ url_for('get_fm') }}">FM</a></div>
             <div>SOURCE FILES</div>
 
 
