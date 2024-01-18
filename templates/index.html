@@ -27,38 +27,42 @@
 
 </head>
 
-<body>
+<body id="body-content">
+
+    <div class="container flex-col" id="textOverlay">BARISTA OAT: FOR FULL SPECTRUM FLAVOR</div>
 
     <div id="imageContainer">
-        <img id="displayedImage" src="static/home1.webp">
+        <img id="currentImage" src="static/home1.webp">
     </div>
 
-    <!-- Add your JavaScript links or scripts here -->
     <script>
-        var currentIndex = 0;
-        var imageArray = [
-            "home1.webp",
-            "home2.webp"
-        ];
+            // Arrays of image file paths and corresponding text
+            var imageSources = ["static/home1.webp","static/home2.webp"];
+            var textArray = ["BARISTA OAT: FOR FULL SPECTRUM FLAVOR", "↓ THE MINOR FIGURE GOLD GLASS (FOR FANCY SIPPING"];
 
-        function cycleImages() {
-            var displayedImage = document.getElementById("displayedImage");
-            displayedImage.src = imageArray[currentIndex];
-            currentIndex = (currentIndex + 1) % imageArray.length;
-        }
+            // Index to track the current image and text
+            var currentIndex = 0;
 
-        var intervalId = setInterval(cycleImages, 2000);
+            // Function to change the image and text
+            function changeImageAndText() {
+                var image = document.getElementById("currentImage");
+                var textOverlay = document.getElementById("textOverlay");
 
-        // To stop the automatic cycling, you can clear the interval
-        clearInterval(intervalId);
+                currentIndex = (currentIndex + 1) % imageSources.length; // Cycle through images and text
+                image.src = imageSources[currentIndex];
+                image.alt = "Description of image " + (currentIndex + 1); // Update alt text
+                textOverlay.innerText = textArray[currentIndex]; // Update text
+            }
+
+            // Set interval to change image and text every 3 seconds (adjust as needed)
+            setInterval(changeImageAndText, 2000);
     </script>
-    <!-- Example: <script src="script.js"></script> -->
 
 
 </body>
 
-<footer>
-    <div class="footer-content">
+<footer id="footer-content">
+    <div class="container flex-col">
         <div> WHOLESALE </div>
         <div> INSTAGRAM </div>
         <div> MAILING LIST </div>
@@ -67,9 +71,9 @@
         <div> SEARCH </div>
         <div> CONTACT </div>
         <div> CAREERS </div>
-
         <div>© MINOR FIGURES 2024 • CREDITS</div>
     </div>
+
 
 </footer>
 </html>

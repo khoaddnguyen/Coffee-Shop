@@ -24,3 +24,14 @@ img {
   background: black;
   color: white
 }
+
+#body-content {
+  background: black;
+  color: white;
+  padding: none;
+}
+
+#footer-content {
+  background: white;
+  color: black
+}
