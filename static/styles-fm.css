@@ -1,0 +1,48 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Space Mono", monospace;
+
+}
+
+body {
+    background-image: url("home-fm-hover.gif");
+    background-color: MediumSlateBlue;
+    background-size: 400px 400px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 50px
+}
+
+.one {
+  flex: 1;
+  width: 200px;
+  color: #000;
+  font-size: 30px;
+  transform-origin: left;
+  font-family: "Helvetica-Bold" !important;
+  background-color: white;
+  padding-left: 17px;
+  padding-right: 16px;
+  padding-top: 9px
+}
+
+.two {
+  flex: 1;
+  font-size: 16px;
+  background-color: LemonChiffon;
+  text-align: center;
+  padding-top: 16px
+}
+
+.three {
+  flex: 1;
+  font-size: 16px;
+  background-color: LightPink;
+  text-align: center;
+  padding-top: 16px
+}

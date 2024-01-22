@@ -1,7 +1,10 @@
 * {
+     margin: 0;
+     padding: 0;
      font-family: "Space Mono", monospace;
      font-size:12px;
 }
+
 
 img {
     width: 100%;
@@ -15,15 +18,54 @@ img {
     justify-content: space-between
 }
 
+.hover-container {
+      position: relative;
+      display: inline-block;
+    }
+
+.hover-container img {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+    }
+
+
+.hover-container:hover img {
+      display: block;
+      transform: translate(-50%, -10%) scale(.5)
+    }
+
 .flex-col {
     flex-direction: column;
 }
 
 
-#header-content {
+#header-content a {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+#header-content a:hover {
+  background: black;
+  color: white;
+}
+
+#header-content a:active {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+#header-content a:visited {
   background: black;
   color: white
+  text-decoration: none;
 }
+
 
 #body-content {
   background: black;

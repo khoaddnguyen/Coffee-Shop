@@ -25,5 +25,9 @@ def get_play():
 def get_fm():
     return render_template("fm.html")
 
+@app.route("/fm/mix")
+def get_mix():
+    return render_template("FM-mix.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
