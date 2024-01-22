@@ -1,8 +1,10 @@
 from flask import Flask, render_template
 import datetime
 import requests
+import os
 
 app = Flask(__name__)
+mapbox_access_token = os.environ.get("MAPBOX_ACCESS_TOKEN")
 
 @app.route("/")
 def home():
