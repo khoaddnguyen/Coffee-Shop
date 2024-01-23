@@ -12,8 +12,10 @@
 
 }
 
-body {
-    background-image: url("home-fm-hover.gif");
+.table {
+  width: 400px;
+  position: absolute;
+  z-index: 2
 }
 
 .container {
@@ -21,6 +23,7 @@ body {
   justify-content: flex-start;
   height: 50px
 }
+
 
 .one {
   width: 200px;
@@ -49,22 +52,44 @@ body {
   text-align: center;
   padding-top: 18px
 }
+
+.row-text {
+  width: 383px;
+  height: 30px;
+  font-size: 12px;
+  background-color: LemonChiffon;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 17px;
+}
+
+#map {
+position: relative;
+        }
+
     </style>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+
 </head>
 
 
 <body>
 
-    <div class="container">
-        <div class="one">MFFM</div>
-        <div class="two"><a href="{{ url_for('get_mix') }}">MIXTAPES</a></div>
-        <div class="three">RADIO</div>
+    <div class="table">
+        <div class="container">
+            <div class="one">MFFM</div>
+            <div class="two"><a href="{{ url_for('get_mix') }}">MIXTAPES</a></div>
+            <div class="three">RADIO</div>
+        </div>
+        <div class="row-text">MUSIC OF THE GLOBAL SPECIALTY COFFE COMMUNITY</div>
+        <div class="row-text">UPLOAD A MIXTAPE TO GET ON THE MAP.</div>
     </div>
 
-    <div id='map' style='width: 100vw; height: 100vh'></div>
+<div id='map' style='width: 100vw; height: 100vh'></div>
     <script>
+      
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/khoaddnguyen/clrpbu93p006o01qs9mlthj8p'
@@ -192,9 +217,9 @@ map.on('mouseleave', 'clusters', () => {
 map.getCanvas().style.cursor = '';
 });
 });
+
+
     </script>
-
-
 
 
 </body>

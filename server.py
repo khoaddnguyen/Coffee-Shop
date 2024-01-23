@@ -29,7 +29,7 @@ def get_fm():
 
 @app.route("/fm/mix")
 def get_mix():
-    return render_template("FM-mix.html")
+    return render_template("FM-mixtapes.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
