@@ -1,7 +1,7 @@
 * {
      margin: 0;
      padding: 0;
-     font-family: "Space Mono", monospace;
+
      text-decoration: none;
 }
 
@@ -9,6 +9,10 @@ body {
     background-image: url("home-fm-hover.gif");
     background-color: MediumSlateBlue;
     background-size: 400px 400px;
+}
+
+a {
+    color: inherit !important;
 }
 
 .container {
@@ -26,7 +30,8 @@ body {
   background-color: white;
   padding-left: 17px;
   padding-right: 16px;
-  padding-top: 9px
+  padding-top: 9px;
+  text-decoration: none;
 }
 
 .two {
@@ -34,7 +39,8 @@ body {
   font-size: 12px;
   background-color: LemonChiffon;
   text-align: center;
-  padding-top: 18px
+  padding-top: 18px;
+  font-family: "Space Mono", monospace;
 }
 
 .three {
@@ -42,5 +48,6 @@ body {
   font-size: 12px;
   background-color: LightPink;
   text-align: center;
-  padding-top: 18px
+  padding-top: 18px;
+  font-family: "Space Mono", monospace;
 }

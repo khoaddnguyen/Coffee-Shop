@@ -8,8 +8,11 @@
 * {
      margin: 0;
      padding: 0;
-     font-family: "Space Mono", monospace;
+     text-decoration: none;
+}
 
+a {
+    color: inherit !important;
 }
 
 .table {
@@ -34,7 +37,8 @@
   background-color: white;
   padding-left: 17px;
   padding-right: 16px;
-  padding-top: 9px
+  padding-top: 9px;
+  text-decoration: none;
 }
 
 .two {
@@ -42,7 +46,8 @@
   font-size: 12px;
   background-color: LemonChiffon;
   text-align: center;
-  padding-top: 18px
+  padding-top: 18px;
+  font-family: "Space Mono", monospace;
 }
 
 .three {
@@ -50,7 +55,8 @@
   font-size: 12px;
   background-color: LightPink;
   text-align: center;
-  padding-top: 18px
+  padding-top: 18px;
+  font-family: "Space Mono", monospace;
 }
 
 .row-text {
@@ -61,16 +67,16 @@
   text-align: left;
   padding-top: 15px;
   padding-left: 17px;
+  font-family: "Space Mono", monospace;
 }
 
 #map {
 position: relative;
-        }
+}
 
     </style>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-
 
 </head>
 
@@ -79,8 +85,8 @@ position: relative;
 
     <div class="table">
         <div class="container">
-            <div class="one">MFFM</div>
-            <div class="two"><a href="{{ url_for('get_mix') }}">MIXTAPES</a></div>
+            <div class="one"><a href="{{ url_for('get_fm') }}">MFFM</a></div>
+            <div class="two"><a href="{{ url_for('get_mixtapes') }}">MIXTAPES</a></div>
             <div class="three">RADIO</div>
         </div>
         <div class="row-text">MUSIC OF THE GLOBAL SPECIALTY COFFE COMMUNITY</div>
@@ -92,7 +98,8 @@ position: relative;
       
       var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/khoaddnguyen/clrpbu93p006o01qs9mlthj8p'
+        style: 'mapbox://styles/khoaddnguyen/clrpbu93p006o01qs9mlthj8p',
+        center: [-103.5917, 40.6699],
       });
 
         map.on('load', () => {

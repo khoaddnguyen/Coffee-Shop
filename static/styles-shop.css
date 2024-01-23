@@ -1,0 +1,27 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Space Mono", monospace;
+     font-size:12px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-between
+}
+
+#header-content a {
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+#menu {
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding-left: 17px
+}
+

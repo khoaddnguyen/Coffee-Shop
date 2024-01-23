@@ -28,7 +28,7 @@ def get_fm():
     return render_template("fm.html")
 
 @app.route("/fm/mix")
-def get_mix():
+def get_mixtapes():
     return render_template("FM-mixtapes.html")
 
 if __name__ == "__main__":
