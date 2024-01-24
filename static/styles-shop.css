@@ -12,6 +12,14 @@
     justify-content: space-between
 }
 
+.grid {
+    display: grid;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
 #header-content a {
   background: white;
   color: black;
@@ -25,3 +33,7 @@
   padding-left: 17px
 }
 
+#footer-content {
+  background: white;
+  color: black
+}
