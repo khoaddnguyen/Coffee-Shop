@@ -31,5 +31,9 @@ def get_fm():
 def get_mixtapes():
     return render_template("FM-mixtapes.html")
 
+@app.route("/test")
+def get_test():
+    return render_template("test.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

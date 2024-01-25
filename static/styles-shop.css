@@ -5,6 +5,45 @@
      font-size:12px;
 }
 
+.menu-and-list {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+}
+
+.menu {
+  padding: 10px;
+  order: -1
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 10px
+ }
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px; /* Gap between columns */
+}
+
+.grid-item {
+  width: 100%;
+  margin-bottom: 20px; /* Gap between rows */
+}
+
+img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 770px) {
+  body {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
 .container {
     display: flex;
     gap: 10px;
@@ -12,9 +51,7 @@
     justify-content: space-between
 }
 
-.grid {
-    display: grid;
-}
+
 
 .flex-col {
     flex-direction: column;
