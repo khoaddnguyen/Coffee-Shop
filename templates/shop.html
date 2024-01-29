@@ -5,18 +5,16 @@
     <title>MF Store</title>
     <link rel="stylesheet" href="static/styles-shop.css">
 
-    <div class="nav-container" id="header-content justify-content">
-            <ul>
-                <li><a href="{{ url_for('home') }}">MINOR FIGURES</a></li>
-                <li class="login-button"><a href="{{ url_for('get_login') }}">LOGIN</a></li>
-            </ul>
+    <div class="flex flex-row justify-between nav-container">
+                <div><a class="position-fixed" href="{{ url_for('home') }}">MINOR FIGURES</a></div>
+                <div><a class="position-fixed" href="{{ url_for('get_login') }}">LOGIN</a></div>
     </div>
-
 </head>
 
 
 
 <body>
+
     <div class="menu-and-list">
         <div class="menu">
             <ul>
