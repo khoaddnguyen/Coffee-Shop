@@ -3,66 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px; /* Gap between columns */
-    }
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Change on Hover</title>
+  <style>body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-    .grid-item {
-      width: 100%;
-      margin-bottom: 20px; /* Gap between rows */
-    }
+.image-container {
+  display: flex;
+  gap: 20px;
+}
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
 
-    @media (max-width: 770px) {
-      body {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-      }
-    }
-  </style>
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image:hover img:first-child {
+  transform: translateY(-100%); /* Move the first image up on hover */
+}
+
+.image:hover img:last-child {
+  transform: translateY(0); /* Bring the second image into view on hover */
+}
+
+/* Add more styles for additional images */
+</style>
 </head>
 <body>
 
-  <div class="grid-item">
-    <img src="static/shop/shop-oat-1-1.webp" alt="Image 1">
+  <div class="image-container">
+    <div class="image" id="image1">
+      <img src="static/shop/shop-sock-1.webp" alt="First Image">
+      <img src="static/shop/shop-candle-1.webp" alt="Second Image">
+    </div>
+    <!-- Add more divs for additional images -->
   </div>
-
-  <div class="grid-item">
-    <img src="static/shop/shop-oat-2-1.webp" alt="Image 2">
-  </div>
-
-  <div class="grid-item">
-    <img src="static/shop/shop-oat-3-1.webp" alt="Image 3">
-  </div>
-
-  <div class="grid-item">
-    <img src="static/shop/shop-candle-1.webp" alt="Image 4">
-  </div>
-
-  <div class="grid-item">
-    <img src="static/shop/shop-brew-2-1.webp" alt="Image 5">
-  </div>
-
-  <div class="grid-item">
-    <img src="static/shop/shop-brew-1-1.webp" alt="Image 6">
-  </div>
-
-    <div class="grid-item">
-    <img src="static/shop/shop-glass-1.webp" alt="Image 7">
-  </div>
-
-  <div class="grid-item">
-    <img src="static/shop/shop-sock-1.webp" alt="Image 8">
-  </div>
-
-  <!-- Add more items as needed -->
 
 </body>
 </html>
