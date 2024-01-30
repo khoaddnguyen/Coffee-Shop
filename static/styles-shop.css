@@ -115,3 +115,21 @@ img {
   background: white;
   color: black
 }
+
+
+.hover-container {
+      position: relative;
+      display: block;
+    }
+
+.hover-container img {
+      display: none;
+      position: absolute;
+      transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
+
+
+.hover-container:hover img {
+      display: block;
+      transform: translate(0%, 0%) scale(1)
+    }
