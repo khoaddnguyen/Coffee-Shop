@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="static/styles-shop.css">
 
     <div class="flex flex-row justify-between nav-container">
-                <div><a class="position-fixed" href="{{ url_for('home') }}">MINOR FIGURES</a></div>
-                <div><a class="position-fixed" href="{{ url_for('get_login') }}">LOGIN</a></div>
+        <div><a class="position-fixed" href="{{ url_for('home') }}">MINOR FIGURES</a></div>
+        <div><a class="position-fixed" href="{{ url_for('get_login') }}">LOGIN</a></div>
     </div>
 </head>
 
@@ -25,38 +25,49 @@
         </div>
 
         <div class="product-list">
-            <div class="grid-item hover-container"><a href="{{ url_for('get_test') }}">
-                    <img src="static/shop/shop-oat-1-1.webp" alt="Oat 1-1"></a>
-                    <img class="top-img" src="static/shop/shop-oat-1-2.webp" alt="Oat 1-2">
-              </div>
+            <div class="grid-container">
 
-              <div class="grid-item">
-                <img src="static/shop/shop-oat-2-1.webp" alt="Oat 2-1">
-              </div>
+                <div class="grid-item hover-container">
+                    <img src="static/shop/shop-oat-1-1.webp" alt="Oat 1-1">
+                    <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-oat-1-2.webp" alt="Oat 1-2"></a>
+                  </div>
 
-              <div class="grid-item">
-                <img src="static/shop/shop-oat-3-1.webp" alt="Oat 3-1">
-              </div>
+                  <div class="grid-item hover-container">
+                    <img src="static/shop/shop-oat-2-1.webp" alt="Oat 2-1">
+                    <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-oat-2-2.webp" alt="Oat 2-2"></a>
+                  </div>
 
-              <div class="grid-item">
-                <img src="static/shop/shop-candle-1.webp" alt="Candle 1-1">
-              </div>
+                  <div class="grid-item hover-container">
+                    <img src="static/shop/shop-oat-3-1.webp" alt="Oat 3-1">
+                      <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-oat-3-2.webp" alt="Oat 3-2"></a>
+                  </div>
 
-              <div class="grid-item">
-                <img src="static/shop/shop-brew-1-1.webp" alt="Brew 1-1">
-              </div>
+                  <div class="grid-item hover-container">
+                    <img src="static/shop/shop-candle-1.webp" alt="Candle 1">
+                      <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-candle-2.webp" alt="Candle 2"></a>
+                  </div>
 
-              <div class="grid-item">
-                <img src="static/shop/shop-brew-2-1.webp" alt="Brew 2-1">
-              </div>
+                  <div class="grid-item hover-container">
+                    <img src="static/shop/shop-brew-1-1.webp" alt="Brew 1-1">
+                      <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-brew-1-2.webp" alt="Brew 1-2"></a>
+                  </div>
 
-                <div class="grid-item">
-                <img src="static/shop/shop-glass-1.webp" alt="Glass 1-1">
-              </div>
+                  <div class="grid-item hover-container">
+                    <img src="static/shop/shop-brew-2-1.webp" alt="Brew 2-1">
+                      <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-brew-2-2.webp" alt="Brew 2-2"></a>
+                  </div>
 
-              <div class="grid-item">
-                <img src="static/shop/shop-sock-1.webp" alt="Sock 1-1">
-              </div>
+                    <div class="grid-item hover-container">
+                    <img src="static/shop/shop-glass-1.webp" alt="Glass 1">
+                        <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-glass-2.webp" alt="Glass 2"></a>
+                  </div>
+
+                  <div class="grid-item hover-container">
+                    <img src="static/shop/shop-sock-1.webp" alt="Sock 1-1">
+                      <a href="{{ url_for('get_test') }}"><img class="top-img" src="static/shop/shop-sock-2.webp" alt="Sock 2"></a>
+                  </div>
+
+            </div>
         </div>
     </div>
 
