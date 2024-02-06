@@ -1,0 +1,11 @@
+* {
+     font-family: "Space Mono", monospace;
+     font-size:12px;
+}
+
+
+img {
+  width: 70%;
+  height: auto;
+  display: block;
+}

@@ -19,6 +19,10 @@ def get_login():
 def get_shop():
     return render_template("shop.html")
 
+@app.route("/product")
+def get_product():
+    return render_template("product.html")
+
 @app.route("/play")
 def get_play():
     return render_template("play.html")
